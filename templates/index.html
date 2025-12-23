@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reconnaissance Faciale</title>
+</head>
+<body>
+
+<h2>Changer la caméra</h2>
+<form action="/set_camera" method="post">
+    <input type="text" name="camera_url"
+           placeholder="0 ou rtsp://user:pass@ip:554/stream"
+           style="width:400px">
+    <button type="submit">Changer</button>
+</form>
+
+<h2>Caméra</h2>
+<img src="/video" width="720">
+
+<form action="/register" method="post">
+    <button type="submit">Enregistrer les visages</button>
+</form>
+
+</body>
+</html>
